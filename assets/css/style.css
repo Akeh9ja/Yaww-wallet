@@ -1,0 +1,212 @@
+body {
+    background-color: rgb(20,20,31);
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    border-bottom: 1px solid rgba(228,228,231, .5);
+}
+.left-section {
+    display: flex;
+    width: 300px;
+}
+.hd-img {
+    width: 150px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.middle-section {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: space-evenly;
+    
+}
+a{
+    font-family: 'Urbanist',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+a:hover {
+    color: rgba(20,184,166);
+}
+.right-section {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.rps-nav{
+    position:absolute;
+    width: 50px;
+    font-size: 24px;
+    top: 20px;
+    color: white;
+    right: 10px;
+    visibility: hidden;
+}
+
+button {
+    padding: 10px 30px;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+button::placeholder {
+    font-family: 'urbanist', sans-serif;
+}
+.listing-btn {
+    margin-left: 20px;
+    width: 180px;
+    background-color: rgba(249,115,22);
+    color: white;
+    border: none;
+}
+.wallet-btn {
+    margin-left: 20px;
+    width: 180px;
+    background-color: rgb(20,20,31);
+    border: solid 1px rgba(20,184,166);
+    color: rgba(20,184,166);
+}
+.div-avtr{
+    width: 40px;
+    height: 35px;
+    margin-left: 20px;
+    position: relative;
+    border-radius: 50%;
+    border: 4px solid rgba(20,184,166);
+    
+}
+.avatar {
+    width: 40px;
+    height: 35px;
+    margin-left: 0px;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.div-avtr:hover {
+    border: solid 4px rgba(249,115,22);
+}
+i {
+    width: 10px;
+}
+/*wallet section*/
+.wallet-section {
+    margin-top: 20%;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'urbanist', sans-serif;
+    color: white;
+}
+.wallet-section .wallet-btn {
+    background-color: rgba(20,184,166);
+    color: white;
+}
+.wallet-section h3 {
+    font-weight: 400;
+}
+.pop-up{
+    font-family: 'urbanist', sans-serif;
+    width: 380px;
+    height: 250px;
+    position: absolute;
+    opacity: 0;
+    top: 55%;
+    left: 40%;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    border-radius: 5px;
+    padding-top: 40px;
+}
+.pop-up.active {
+    opacity: 1;
+    left: 40%;
+    top: 40%;
+}
+.close{
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    cursor: pointer;
+}
+.pop-up h3 {
+    margin-bottom: 0;
+}
+.pop-up .wallet-btn {
+    display: inline-block;
+    margin-left: 80px;
+}
+textarea {
+    width: 350px;
+    height: 100px;
+    resize: none;
+    align-self: center;
+}
+select {
+    height: 30px;
+}
+option {
+    font-size: 16px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    color: white;
+    margin-top: 15%;
+}
+@media (max-width: 1215px) {
+    .rps-nav {
+        visibility: visible;
+    }
+    .right-section {
+        visibility: hidden;
+        width: 100px;
+    }
+    .pop-up {
+        top: 35%;
+        left: 35%;
+    }
+    .pop-up.active{
+        top: 35%;
+        left: 35%;
+        position: absolute;
+    }
+}
+@media (max-width: 898px) {
+    .middle-section {
+        visibility: hidden;
+    }
+    .pop-up {
+        top: 30%;
+        left: 30%;
+    }
+    .pop-up.active {
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+}
+@media (max-width: 600px) {
+    .pop-up.active {
+        top: 20%;
+        left: 10%;
+    }
+}
